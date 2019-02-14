@@ -1,18 +1,19 @@
 html {
     background: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-    -webkit-font-smoothing: antialiased;
-}
+padding:50px;}
 
-body { margin: auto;
-    margin-top: 60px;
+.project {padding-top:30px;}
+
+body {
     background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.5;
+    margin: 0 auto;
     max-width: 800px;
-    padding:1em 0em 1em 3em;
+    padding: 2em 2em 4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,20 +22,47 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
 }
 
+h1 {font-size: 31px;
+    text-align: center;}
+
 h2 {
-    margin-top: 0 em;
+    margin-top: 1.3em;
+    
+}
+
+h3, h4 {text-align: center;}
+h4{color:darkgray;}
+h5{font-size:20px;}
+a:link {color:darkslategrey;
+        padding-left:10px;
+        padding-right:10px;
+        font-size:15px;}
+a:hover{color:white;
+        background-color:silver;}
+
+b, strong {
+    font-weight: 600;
+}
+
+p{  text-indent: 50px;
+    word-spacing: 5px;
+    line-height:30px;
 }
 
 
-
-input {width: 10%;
-       margin: 2em;
-    font-size: 15px;
+samp {
+    display: none;
 }
 
-span {font-size: 15px;}
-
-button {width: 5%;}
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
 
 @keyframes colorize {
     0% {

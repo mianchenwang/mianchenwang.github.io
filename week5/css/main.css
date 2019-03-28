@@ -43,6 +43,9 @@ label {padding-right: 1em;}
 #subtotal {position: relative;
             left:20%;}
 
+#output {position: relative;
+      left:30%;}
+
 button {background-color: grey;
         color: aliceblue;
         padding: 10px;

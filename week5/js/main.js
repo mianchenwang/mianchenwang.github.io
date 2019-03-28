@@ -1,6 +1,7 @@
 var c_name = ["A","B","C","D","E"];
 var o_food = ["1","2","3","4","5"];
 var fnum = 0;
+var text = "";
 var n1;
 var n2;
 var n3;
@@ -12,13 +13,15 @@ const foodnames = document.getElementById("food");
 const pricenumber = document.getElementById("price");
 const names = document.getElementById("name");
 const pcont = document.getElementById("pcontainer");
-const sub_btn = document.getElementById("subtotal")
+const sub_btn = document.getElementById("subtotal");
+const en_btn = document.getElementById("enter");
 
 
 
 addfood.addEventListener("click",addFood);
 sub_btn.addEventListener("click",subTotal);    
 
+en_btn.addEventListener("click",foodEnter);
 
 //use the content loaded event to trigger for loops to populate the select elements from the arrays
 
@@ -40,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function(e)  {
     
     //set the options for the heart color
         for (let i=0;i<o_food.length;i++){ 
+            text += i * "<input>";
         //create a new option element
         let opt = document.createElement("option");
         //add value to the option element
@@ -50,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function(e)  {
         //add the option to the select element
         foodnames.add(opt);
     }
+    function foodEnter(){
+    foodlist.innerHTML = (text);}
 });
                                               
                                                             

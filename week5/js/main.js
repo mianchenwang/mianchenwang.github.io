@@ -15,13 +15,16 @@ const names = document.getElementById("name");
 const pcont = document.getElementById("pcontainer");
 const sub_btn = document.getElementById("subtotal");
 const en_btn = document.getElementById("enter");
+/*
+const foodEnter = 
+document.getElementById("")*/
 
 
 
 addfood.addEventListener("click",addFood);
 sub_btn.addEventListener("click",subTotal);    
 
-en_btn.addEventListener("click",foodEnter);
+//en_btn.addEventListener("click",foodEnter);
 
 //use the content loaded event to trigger for loops to populate the select elements from the arrays
 
@@ -64,10 +67,10 @@ function addFood(){
     //create form with a unique id + elements
    let fform = document.createElement('div');
     fform.setAttribute("id","f"+fnum);
-    
+    fnum=fnum+1;
     pcont.appendChild(fform);
     
-    fform.innerHTML = "<lable id='added'>Food Price<input id='price2'></lable>";
+    fform.innerHTML = "<lable>Food Price<input id='price2'></lable>";
 
 }
 
@@ -78,7 +81,7 @@ n2 =document.getElementById("tax").value;
  n3=document.getElementById("tip").value;
  n4=document.getElementById("price2").value;
  var n5= Number (n1) + Number(n4);
-    var sum = Number(n1) + Number(n5/n2) + Number(n5/n3)+ Number(n4);
+    var sum = Number(n5) + Number(n5*n2/100) + Number(n5*n3/100);
                     output.innerHTML=(sum);};
 
 

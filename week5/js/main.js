@@ -63,14 +63,22 @@ document.addEventListener('DOMContentLoaded', function(e)  {
                                               
                                                             
 //function to add another food
-function addFood(){
+/*function addFood(){
     //create form with a unique id + elements
    let fform = document.createElement('div');
     fform.setAttribute("id","f"+fnum);
     fnum=fnum+1;
     pcont.appendChild(fform);
     
-    fform.innerHTML = "<lable>Food Price<input id='price2'></lable>";
+    fform.innerHTML = "<lable>Food Price<input id='price'></lable>";
+}*/
+
+//function to add another food
+function addFood(){
+    //create form with a unique id + elements
+   let fform = document.createElement('div');
+    $("fform#price2 :input").each(function(){
+ var input = $(this.val);
 
 }
 
@@ -79,9 +87,9 @@ function subTotal()
 {n1=document.getElementById("price").value;
 n2 =document.getElementById("tax").value;
  n3=document.getElementById("tip").value;
- n4=document.getElementById("price2").value;
- var n5= Number (n1) + Number(n4);
-    var sum = Number(n5) + Number(n5*n2/100) + Number(n5*n3/100);
+ /*n4=document.getElementById("price2").value;
+ var n5= Number (n1) + Number(n4);*/
+    var sum = Number(n1) + Number(n1*n2/100) + Number(n1*n3/100);
                     output.innerHTML=(sum);};
 
 

@@ -1,0 +1,42 @@
+
+{"celebs":[
+{"name":"Yang Mi","gender":"female","cls":"actor","score":"128.5","image":"img/Yang_Mi.jpg","class":"image",
+ "id":"Yang Mi",
+ "x":890,"y":358,"width":60,"height":60},
+    
+{"name":"GDragon","gender":"male","cls":"singer","score":"125.5","image":"img/G_Dragon.jpg","class":"image",
+ "id":"G Dragon",
+ "x":825,"y":280,"width":60,"height":60},
+    
+{"name":"Lu Han","gender":"male","cls":"actor","score":"110.5","image":"img/Lu_Han.jpg","class":"image",
+ "id":"Lu Han",
+ "x":725,"y":400,"width":60,"height":60},
+    
+{"name":"Fan BingBing","gender":"female","cls":"actor","score":"20.0","image":"img/Fan_Bingbing.jpg","class":"image",
+ "id":"Fan BingBing",
+ "x":1050,"y":210,"width":60,"height":60},
+    
+{"name":"Yu WenLe","gender":"male","cls":"actor","score":"103.5:","image":"img/Yu_Wen_Le.jpg","class":"image",
+ "id":"Yu WenLe",
+ "x":1000,"y":310,"width":60,"height":60},
+    
+{"name":"GuLiNaZha","gender":"female","cls":"actor","score":"128.5","image":"img/Gu_Li_Na_Zha.jpg","class":"image",
+ "id":"Gu Li Na Zha",
+ "x":1090,"y":450,"width":60,"height":60},
+    
+{"name":"DiLiReZha","gender":"male","cls":"singer","score":"125.5","image":"img/Di_Li_Re_Ba.jpg","class":"image",
+ "id":"Di Li Re Zha",
+ "x":650,"y":560,"width":60,"height":60},
+    
+{"name":"Zhou DongYu","gender":"male","cls":"actor","score":"110.5","image":"img/Zhou_Dong_Yu.jpg","class":"image",
+ "id":"Zhou DongYu",
+ "x":600,"y":100,"width":60,"height":60},
+    
+{"name":"Ma YiLi","gender":"female","cls":"actor","score":"20.0","image":"img/Liu_Tao.jpg","class":"image",
+ "id":"Ma YiLi",
+ "x":550,"y":150,"width":60,"height":60},
+    
+{"name":"Wu YiFan","gender":"male","cls":"actor","score":"103.5","image":"img/Wu_Yi_Fan.jpg","class":"image",
+ "id":"Wu YiFan",
+ "x":1140,"y":580,"width":60,"height":60}
+]}

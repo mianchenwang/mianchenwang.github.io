@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Celebrated Culture — Celebrity Chart</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+      <script type="text/javascript" src="celeb.min.js"></script>
+    <link href="jquery.tipsy.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="jquery.tipsy.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css">  
+      <script type="text/json" src="data.json"></script>
+  </head>
+  <body>
+
+      
+      <div id="toolbox">
+			<p id="titlep">
+				</p><div id="title">
+					WHO HAS THE MOST IMPACT ON TAOBAO, 2018
+				</div>
+				<br>
+				<a class="boton" href="http://www.sohu.com/a/291025872_419410" target="_blank">Data from © Sohu.com</a>
+          
+			<div id="sliderContainer">
+				Select: <span id="similarity"></span>
+				
+			</div>
+			<div id="chartSelector" class="ui-buttonset">
+                
+                <input type="checkbox" value="male" id="male" name="chartOption" checked="checked" class="ui-helper-hidden-accessible">
+                <label for="male" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left" aria-pressed="true" role="button" aria-disabled="false">
+                    <span class="ui-button-text">Male</span></label>
+                
+                <input type="checkbox" value="female" id="female" name="chartOption" class="ui-helper-hidden-accessible">
+                <label for="female" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Female</span></label>
+                
+                <input type="checkbox" value="actor" id="actor" name="chartOption" class="ui-helper-hidden-accessible">
+                <label for="actor" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Actor/Actress</span></label>
+                
+                <input type="checkbox" value="singer" id="singer" name="chartOption" class="ui-helper-hidden-accessible">
+                <label for="singer" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false">
+                    <span class="ui-button-text">Singer</span></label>
+                
+                <input type="checkbox" value="influencer" id="influencer" name="chartOption" class="ui-helper-hidden-accessible">
+                <label for="influencer" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Influencer</span></label>
+                
+                <input type="checkbox" value="model" id="model" name="chartOption" class="ui-helper-hidden-accessible">
+                <label for="model" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right" role="button" aria-disabled="false">
+                    <span class="ui-button-text">Model</span></label></div>
+          
+          
+			<div id="species_information" style="height: 80%;"><p id="hint">Click on any celebrity headshot to show his/her Wikipedia introduction.</p></div>
+		</div>
+		
+
+
+</body>
+</html>

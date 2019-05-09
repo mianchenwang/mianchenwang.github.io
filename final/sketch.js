@@ -37,8 +37,7 @@ function setup() {
  //   console.log(term);
     
     
-}
-
+};
 
 
 function draw() {

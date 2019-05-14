@@ -1,17 +1,19 @@
 
 let img1, img2, img3, img4, img5, img6, img7, img8, img9, img10; //define all images
+let text1
 let images = []; //creating an array for all images
 let data={};    // Global object to hold results from the loadJSON call
 let celebs=[];  // Global array to hold all image objects
-let userInput;
-
-
+//let buttons=[];
+//let button1, button2, button3;
 
 function setup() {
+    createCanvas(100,500);
   createCanvas(1280, 700);
     
 
-     
+    
+  //Load Json data    
      let celebData=data['celebs'];
     
      console.log(celebData)
@@ -26,7 +28,8 @@ function setup() {
          let cls=celeb['cls'];
          let width=celeb['width'];
          let height=celeb['height'];
-         celebs.push(new Celeb(x, y, image, name, gender, score, cls, width, height));
+         let text=celeb['text'];
+         celebs.push(new Celeb(x, y, image, name, gender, score, cls, width, height, text));
      }  
     
   //  let userInput=select('name');
@@ -37,7 +40,8 @@ function setup() {
  //   console.log(term);
     
     
-};
+}
+
 
 
 function draw() {
@@ -70,6 +74,9 @@ background(220,20,60);
   ellipse (900,350,130,130);
   fill(254, 30, 105);
   ellipse (900,350,60,60);
+    
+    fill(254, 221, 221);
+    rect(25, 30, 400, 600);
     
  //numbers on circle shapes   
 fill(255,250,250);    
@@ -114,7 +121,7 @@ text('70', 1332, 355);
 
 //celebrity class
 class Celeb {
-  constructor(x,y,image,name,gender,score,cls,width,height) {
+  constructor(x,y,image,name,gender,score,cls,width,height,text) {
     this.x = x;
     this.y = y;
     this.image = image;
@@ -124,6 +131,7 @@ class Celeb {
     this.cls = cls;
       this.width = width;
     this.height = height;
+      this.text = text;
   }
 
 
@@ -152,3 +160,42 @@ function preload(){
     img10=loadImage("img/Wu_Yi_Fan.jpg");
     images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]   
 }
+
+
+
+
+//let infoButton=['buttons'];
+    
+//     console.log(infoButton)
+ //    for (let i = 0; i < infoButton.length; i++){
+
+let button1; 
+    button1.mouseClicked;
+    function mouseClicked(){
+        let d = dist(mouseX, mouseY,890,358);
+        if (d<30){
+var div0 = createDiv("Yang Mi (Chinese: 杨幂, born 12 September 1986) is a Chinese actress and singer. She made her acting debut in historical television series Tang Ming Huang, and later received recognition for her leading roles in various television series Wang Zhaojun (2007), Chinese Paladin 3 (2009), Palace (2011), Beijing Love Story (2012), Swords of Legends (2014), The Interpreter (2016), Eternal Love (2017) and Legend of Fuyao (2018); as well as films Mysterious Island (2011), Tiny Times (2013–2015), and The Witness (2015). In 2017, she won the Best Actress award at the WorldFest Houston International Festival for her performance in Reset (2017).Yang was chosen by Southern Metropolis Daily as one of the New Four Dan Actresses. In 2017, Yang ranked third on the Forbes China Celebrity 100 list.")}
+    
+
+}
+
+let button2; 
+    button2.mouseClicked;
+    function mouseClicked(){
+        let d = dist(mouseX, mouseY,855,310);
+        if (d<30){
+var div0 = createDiv("Kwon Ji-yong (Hangul: 권지용; born August 18, 1988), also known by his stage name G-Dragon, is a South Korean singer-songwriter, rapper, record producer, entrepreneur and fashion icon known for penning chart-topping singles and his stage presence that has garnered him the title King of K-pop. From age twelve, G-Dragon trained for six years at South Korean entertainment label YG Entertainment before debuting in 2006 as a member of the hip hop boy band Big Bang, which went on to become one of the best-selling boy bands in the world.")}
+
+    }
+
+let button3; 
+    button3.mouseClicked;
+    function mouseClicked(){
+        let d = dist(mouseX, mouseY,755,430);
+        if (d<30){
+var div0 = createDiv("Lu Han (Chinese: 鹿晗, born April 20, 1990) is a Chinese singer and actor. He was a member, known as Luhan, of the South Korean-Chinese boy group Exo and its sub-group Exo-M, before leaving the group in October 2014.That year, he was ranked the 6th most popular entertainment star in China by China National Radio.In 2017, Lu Han was listed as the second highest-paid celebrity in the Forbes China Celebrity 100 list, behind only Fan Bingbing.Lu Han released his solo debut album, Reloaded in 2015; and has starred in several box office hits such as 20 Once Again (2015), The Witness (2015) and Time Raiders (2016). In 2017, he starred in his first television series, Fighter of the Destiny.")}
+
+    }
+
+//function preload(){
+ //   buttons = [button1, button2, button3]}

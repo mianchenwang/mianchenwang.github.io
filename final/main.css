@@ -4,10 +4,16 @@ body {
 	margin: 0px;
 }
 
-.node {
-	stroke: #fff;
-	stroke-width: 1.5px;
+
+div {position: absolute;
+top:50px;
+    left:70px;
+width:300px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    font-family: 'Roboto Condensed', sans-serif;;
 }
+
 
 .link {
 	stroke: #999;
@@ -140,7 +146,7 @@ margin-bottom: 5px;}
 	background: #FFE4E1;
 }
 
-#species_information {
+#informationbox {
 	margin-top: 5px;
 	border: inset 1px gray;
 	background: #FFE4E1;
@@ -150,7 +156,7 @@ margin-bottom: 5px;}
 	padding: 0px;
 }
 
-#species_information p {
+#informationbox p {
 	padding: 2px;
 	font-size: 120%;
 }

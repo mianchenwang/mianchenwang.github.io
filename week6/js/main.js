@@ -6,6 +6,7 @@ var n1;
 var n2;
 var n3;
 var n4;
+var n5;
 var inum = 0;
 var i;
 var text = "";
@@ -63,12 +64,12 @@ document.addEventListener('DOMContentLoaded', function(e)  {
 function addFood(){
     //create form with a unique id + elements
    let iform = document.createElement('div');
-    iform.setAttribute("id","i"+inum);
-    
+    iform.setAttribute("id","f"+fnum);
+    fnum=fnum+1;
     pcont.appendChild(iform);
     
-    iform.innerHTML = "<lable>Food Price<input type='text'></lable>";
-
+    iform.innerHTML = "Food Price<input type='text'>";s
+    var input = n4;
 }
 
 //clear form
@@ -76,7 +77,7 @@ function addFood(){
 function addPerson(){
     iform.style.display = "none";
     tax.style.display = "none";
-    tip.style.display = "";
+    tip.style.display = "none";
 }
 
 
@@ -92,14 +93,19 @@ function addFood(sender){
     iform.innerHTML = "<label>Food Price</label><input type='text'>";
 }*/
 
+
+
+
 //claculate subtotal
 function subTotal()
-{n1=document.getElementById("iform").value;
+{n1=document.getElementById("price").value;
+ n4=this.value;
 n2 =document.getElementById("tax").value;
  n3=document.getElementById("tip").value;
+ 
 /* n4=document.getElementById("id").value;*/
-
-    var sum = Number(n1) + Number(n1/n2) + Number(n1/n3);
+n5= Number(n1) + Number(n4);
+    var sum = Number(n5) + Number(n5/n2) + Number(n5/n3);
                     output.innerHTML=(sum);};
 
 

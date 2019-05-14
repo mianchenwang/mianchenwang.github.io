@@ -6,6 +6,7 @@ var n1;
 var n2;
 var n3;
 var n4;
+var n5;
 
 
 
@@ -79,17 +80,14 @@ function addFood(){
    let fform = document.createElement('div');
     $("fform#price2 :input").each(function(){
  var input = $(this.val);
-
-}
+})
 
 //claculate subtotal
 function subTotal()
-{n1=document.getElementById("price").value;
-n2 =document.getElementById("tax").value;
- n3=document.getElementById("tip").value;
- /*n4=document.getElementById("price2").value;
- var n5= Number (n1) + Number(n4);*/
-    var sum = Number(n1) + Number(n1*n2/100) + Number(n1*n3/100);
-                    output.innerHTML=(sum);};
-
-
+{(n1=$("price").value;
+n2 =$("tax").value;
+ n3=$("tip").value;
+ n4=$(this).value;
+ var n5= Number (n1) + Number(n4);
+    var sum = Number(n5) + Number(n5*n2/100) + Number(n5*n3/100);
+                    output.innerHTML=(sum);)};
